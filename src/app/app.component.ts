@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-two-way-binding';
+  fontSizePx:number|string = 16;
+
+  handleSizeChange(size:number|string){
+    this.fontSizePx=size;
+  }
 }
